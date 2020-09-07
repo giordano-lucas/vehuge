@@ -1,0 +1,8 @@
+[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /Users/lucas/Desktop/SPN-breeze-scala/project/target/.sbt-compilation-infos/spn-breeze-scala-compile/.sbt-idea-lock ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/lucas/Desktop/SPN-breeze-scala/src/main/scala/base/SPN.scala:77:3: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: base.Fitable[0m
+[0m[[0m[31merror[0m] [0m[0m  }[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /Users/lucas/Desktop/SPN-breeze-scala/project/target/.sbt-compilation-infos/spn-breeze-scala-compile/.sbt-idea-lock.[0m
