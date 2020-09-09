@@ -10,7 +10,7 @@ object Main {
     println(data)
     val g = Gaussian(0,0,0) fit data
     g match {
-      case Success(Gaussian(scope, mean, std,_,_)) => println(mean)
+      case Some(Gaussian(scope, mean, std,_,_)) => println(mean)
     }
   }
 }

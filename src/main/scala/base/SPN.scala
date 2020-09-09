@@ -3,7 +3,7 @@ import scala.language.postfixOps
 import breeze.linalg._
 import breeze.numerics._
 import breeze.stats._
-import scala.util.{Success, Try}
+
 /* ====================================================================================
    ============================ SPN tree Abstract types ===============================
    ==================================================================================== */
@@ -27,7 +27,7 @@ trait Fitable {
 
    /!\ can fail if data is not in the right format
    */
-  def fit(data:DenseMatrix[Double]):Try[SPN]
+  def fit(data:DenseMatrix[Double]):Option[SPN]
 }
 trait SPNBuilder[T] {
   /* SPNBuilder must be implemented by companion objects of all
@@ -63,17 +63,25 @@ case class Indicator(scope:Int,value:Double) extends Leaf(scope) {
 // ---------------------- Multinomial -----------------------
 case class Multinomial(
                         scope:Int,
-                        p:Double,
-                        logp:Double,
-                        logcounts:Double
+                        logp:DenseVector[Double],
+                        logcounts:Option[DenseVector[Double]]
                       ) extends Leaf(scope)
 {
-override def evaluate(data:DenseMatrix[Double]):DenseMatrix[Double] = ???
+override def evaluate(data:DenseMatrix[Double]):DenseMatrix[Double] =
+  data(::,scope).map(e=> if (e.isNaN || e<logp.length) 0.0 else logp(e.toInt)).toDenseMatrix
 }
 object Multinomial extends SPNBuilder[(Int,Int)] {
-  override def apply(arg: (Int, Int)): Fitable = {
-    val (scope,k) = arg
-
+  override def apply(arg: (Int, Int)): Fitable = new Fitable {
+    val (scope,k) = arg                                                   //scope and number of buckets
+    override def fit(data: DenseMatrix[Double]): Option[Multinomial] = {
+      val d = data(::, scope).map(_.toInt)                                //project to scope
+      val (p:DenseVector[Double],logcounts) = d.length match {
+        case 0 => (DenseVector.fill(k){1/k},None)                         //uniform distribution if no data
+        case l => val counts = Utils.bincount(d,k).map(_.toDouble) + 1e-6 //avoid log(0)
+          (counts/(l + k*1e-6),Some(log(counts)))                         //normalise
+      }
+      Some(Multinomial(scope,log(p),logcounts))
+    }
   }
 }
 // ---------------------- Gaussian -----------------------
@@ -91,13 +99,13 @@ case class Gaussian(
 object Gaussian extends SPNBuilder[(Int,Double,Double)] {
    override def apply(arg:(Int,Double,Double)):Fitable = new Fitable {
     val (scope,a, b) = arg
-    def fit(data: DenseMatrix[Double]): Try[Gaussian] =
-      Success(Gaussian(   //to be finished
+    def fit(data: DenseMatrix[Double]): Option[Gaussian] =
+      Some(Gaussian(   //to be finished
                 scope,
                 breeze.stats.mean(data(::, scope)),
                 if (data.rows > 0) breeze.stats.stddev(data(::, scope)) else 1, //should change default values
-                Double.NegativeInfinity,
-                Double.PositiveInfinity
+                a,
+                b
               ))
   }
 }

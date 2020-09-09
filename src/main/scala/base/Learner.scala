@@ -1,4 +1,4 @@
-/*package base
+package base
 import breeze.linalg._
 
 class Learner(ncat:DenseVector[Int],
@@ -37,37 +37,37 @@ class Learner(ncat:DenseVector[Int],
 
     def addNode(scope:DenseVector[Int], max_height:Int, last_node:Option[Node]):SPN = {
       /* Add a new node to the network. This function is called recursively
-         until max_height is reached or the data is fully partioned into leaf nodes. */
+         until max_height is reached or the data is fully partitioned into leaf nodes. */
       if (scope.length <= 1) addLeaf(scope, last_node) // Single variable in the scope
 
-      val isProdNode = last_node map {_ match {
-        case Prod(_,_,_) => true
-        case _ => false}
-      } getOrElse false
-
-      (if (max_height <= 0 || !isProdNode) addProdNode(scope, max_height, last_node) else None)
-        .orElse(addSumNode(scope, max_height, last_node)) /* We were not able to cut vertically, so we run clustering of the
+      last_node.flatMap(node => (node,max_height <= 0) match {
+        case (Prod(_,_,_),false) => None                  //previous node is prod and we can still add some node => current is not prod
+        case _ => addProdNode(scope, max_height, last_node)
+      }).orElse(addSumNode(scope, max_height, last_node)) /* We were not able to cut vertically, so we run clustering of the
                                                              data (each row is a point), and then we use the result of
                                                              clustering to create the children of a sum node. */
           .getOrElse(Prod(scope,last_node.get,List.empty)) // If no split found, assume fully factorised model.
     }
     def addProdNode(scope:DenseVector[Int], max_height:Int, last_node:Option[Node]):Option[Node] = {
+      // Adds a product node to the SPN after running pairwise independence tests in all variables
+      // to find clusters (=> children of product nodes)
+      val clu = if (max_height > 0)
       ???
     }
     def addSumNode(scope:DenseVector[Int], max_height:Int, last_node:Option[Node]):Option[Node] = {
       ???
     }
-    def addLeaf(scope:DenseVector[Int], last_node:Option[SPN]):Leaf = {
+    def addLeaf(scope:DenseVector[Int], last_node:Option[SPN]):SPN = {
+      //adds a leaf to the already existing SPN
       assert(scope.length == 1,"Univariate leaf should not have more than one variable in its scope.")
-      val categories = ncat(scope(0))
-      null
-      /*if (categories > 1)
-        //Multinomial() fit data
-       */
+      (ncat(scope(0)) match {
+        case 1    => Gaussian(scope(0),Double.NegativeInfinity,Double.PositiveInfinity) //continuous variable
+        case cats => Multinomial(scope(0),cats)                                         //categorical variable
+      }) fit data get
     }
 
     val scope = DenseVector.tabulate(data.rows) {_.toInt}
-    return addNode(scope,max_height,last_node)
+    addNode(scope,max_height,last_node)
   }
 
-}*/
+}
