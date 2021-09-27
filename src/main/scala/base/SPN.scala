@@ -10,11 +10,11 @@ import breeze.stats._
 
 sealed abstract class SPN(scope:DenseVector[Int]) {
   def evaluate(data:DenseMatrix[Double]):DenseMatrix[Double]
-  def size():Int
+  def size:Int
 }
-sealed abstract class Leaf(scope:Int) extends SPN(DenseVector(scope)) { override def size(): Int = 1 }
+sealed abstract class Leaf(scope:Int) extends SPN(DenseVector(scope)) { override def size: Int = 1 }
 sealed abstract class Node(scope:DenseVector[Int],parent:Node,children: List[SPN]) extends SPN(scope) {
-  override def size(): Int = children map (_.size()) sum
+  override def size: Int = children map (_.size) sum
 }
 /* ====================================================================================
    ========================== Construction abstract types =============================

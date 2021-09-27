@@ -153,7 +153,7 @@ def add_prodnode(learnspn, data, scope, max_height, last_node):
         None
             Otherwise.
     """
-    n = len(scope)  # number of variables in the scope
+    n = len(scope)     # number of variables in the scope
     m = data.shape[0]  # number of instances
     if max_height > 0:
         clu = get_indep_clusters(data, scope, learnspn.ncat, learnspn.thr)

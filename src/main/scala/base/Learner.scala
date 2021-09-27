@@ -1,6 +1,9 @@
 package base
 import breeze.linalg._
 
+import scala.Option
+import scala.language.postfixOps
+
 class Learner(ncat:DenseVector[Int],
               thr:Double          =0.001,
               nclusters:Int       =2,
@@ -36,23 +39,30 @@ class Learner(ncat:DenseVector[Int],
   def fit(data:DenseMatrix[Double], last_node:Option[Node] = None):SPN = {
 
     def addNode(scope:DenseVector[Int], max_height:Int, last_node:Option[Node]):SPN = {
-      /* Add a new node to the network. This function is called recursively
-         until max_height is reached or the data is fully partitioned into leaf nodes. */
-      if (scope.length <= 1) addLeaf(scope, last_node) // Single variable in the scope
-
-      last_node.flatMap(node => (node,max_height <= 0) match {
+      // Add a new node to the network. This function is called recursively
+      // until max_height is reached or the data is fully partitioned into leaf nodes.
+      if (scope.length <= 1) addLeaf(scope, last_node)    //Single variable in the scope
+      else last_node.flatMap(node => (node,max_height <= 0) match {
         case (Prod(_,_,_),false) => None                  //previous node is prod and we can still add some node => current is not prod
         case _ => addProdNode(scope, max_height, last_node)
-      }).orElse(addSumNode(scope, max_height, last_node)) /* We were not able to cut vertically, so we run clustering of the
-                                                             data (each row is a point), and then we use the result of
-                                                             clustering to create the children of a sum node. */
-          .getOrElse(Prod(scope,last_node.get,List.empty)) // If no split found, assume fully factorised model.
+      }).orElse(addSumNode(scope, max_height, last_node)) // We were not able to cut vertically, so we run clustering of the
+                                                          // data (each row is a point), and then we use the result of
+                                                          // clustering to create the children of a sum node.
+          .getOrElse(Prod(scope,last_node.get,List[SPN]())) // If no split found, assume fully factorised model.
     }
+    // define the 3 node creation methods: prod, sum, leaf
     def addProdNode(scope:DenseVector[Int], max_height:Int, last_node:Option[Node]):Option[Node] = {
       // Adds a product node to the SPN after running pairwise independence tests in all variables
       // to find clusters (=> children of product nodes)
-      val clu = if (max_height > 0)
-      ???
+      val n = scope.size     // number of variables in the scope
+      val m = data.rows      // number of instances
+      val clu = if (max_height > 0) Utils.getIndepClusters(data,scope, ncat, thr) else (0 to n).toVector
+      val classSplit = classcol map (cc => Utils.contains(scope,cc) && data(::,cc).toScalaVector.distinct.size > 2) getOrElse false
+      if (clu.distinct.size == 0 && !classSplit)
+        None
+      else { // If independent clusters were found or split on class var.
+        Some(???)
+      }
     }
     def addSumNode(scope:DenseVector[Int], max_height:Int, last_node:Option[Node]):Option[Node] = {
       ???

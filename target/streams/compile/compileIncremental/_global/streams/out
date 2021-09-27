@@ -1,1 +1,406 @@
-[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/Users/lucas/Desktop/SPN-breeze-scala/src/main/scala/base/Utils.scala, /Users/lucas/Desktop/SPN-breeze-scala/src/main/scala/base/Learner.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(base.Utils)[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(base.Utils)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/Users/lucas/Desktop/SPN-breeze-scala/src/main/scala/base/Utils.scala, /Users/lucas/Desktop/SPN-breeze-scala/src/main/scala/base/Learner.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: base.Utils[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 2 Scala sources to /Users/lucas/Desktop/SPN-breeze-scala/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.3.5:compile for Scala 2.13.3[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.3.5:compile for Scala 2.13.3[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 20193c76 for Scala compiler version 2.13.3[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/lucas/Desktop/SPN-breeze-scala/target/scala-2.13/classes:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalanlp/breeze_2.13/1.1/breeze_2.13-1.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.13/1.1/breeze-macros_2.13-1.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/fommil/netlib/core/1.1.2/core-1.1.2.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/wendykierp/JTransforms/3.1/JTransforms-3.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-math3/3.5/commons-math3-3.5.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.13/2.3.3/shapeless_2.13-2.3.3.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire_2.13/0.17.0-M1/spire_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.1.1/scala-collection-compat_2.13-2.1.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/pl/edu/icm/JLargeArrays/1.5/JLargeArrays-1.5.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire-macros_2.13/0.17.0-M1/spire-macros_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire-platform_2.13/0.17.0-M1/spire-platform_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire-util_2.13/0.17.0-M1/spire-util_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/machinist_2.13/0.6.8/machinist_2.13-0.6.8.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/algebra_2.13/2.0.0-M2/algebra_2.13-2.0.0-M2.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.13/2.0.0-M4/cats-kernel_2.13-2.0.0-M4.jar[0m
+[0m[[0m[31merror[0m] [0m[0m## Exception when compiling 5 sources to /Users/lucas/Desktop/SPN-breeze-scala/target/scala-2.13/classes[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.AssertionError: assertion failed: [0m
+[0m[[0m[31merror[0m] [0m[0m  List(method apply$mcI$sp, method apply$mcI$sp)[0m
+[0m[[0m[31merror[0m] [0m[0m     while compiling: /Users/lucas/Desktop/SPN-breeze-scala/src/main/scala/base/Learner.scala[0m
+[0m[[0m[31merror[0m] [0m[0m        during phase: globalPhase=specialize, enteringPhase=explicitouter[0m
+[0m[[0m[31merror[0m] [0m[0m     library version: version 2.13.3[0m
+[0m[[0m[31merror[0m] [0m[0m    compiler version: version 2.13.3[0m
+[0m[[0m[31merror[0m] [0m[0m  reconstructed args: -bootclasspath /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar -classpath /Users/lucas/Desktop/SPN-breeze-scala/target/scala-2.13/classes:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalanlp/breeze_2.13/1.1/breeze_2.13-1.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.13/1.1/breeze-macros_2.13-1.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/fommil/netlib/core/1.1.2/core-1.1.2.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/wendykierp/JTransforms/3.1/JTransforms-3.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-math3/3.5/commons-math3-3.5.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.13/2.3.3/shapeless_2.13-2.3.3.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire_2.13/0.17.0-M1/spire_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.1.1/scala-collection-compat_2.13-2.1.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/pl/edu/icm/JLargeArrays/1.5/JLargeArrays-1.5.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire-macros_2.13/0.17.0-M1/spire-macros_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire-platform_2.13/0.17.0-M1/spire-platform_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire-util_2.13/0.17.0-M1/spire-util_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/machinist_2.13/0.6.8/machinist_2.13-0.6.8.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/algebra_2.13/2.0.0-M2/algebra_2.13-2.0.0-M2.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.13/2.0.0-M4/cats-kernel_2.13-2.0.0-M4.jar[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  last tree to typer: Ident(x1)[0m
+[0m[[0m[31merror[0m] [0m[0m       tree position: line 46 of /Users/lucas/Desktop/SPN-breeze-scala/src/main/scala/base/Learner.scala[0m
+[0m[[0m[31merror[0m] [0m[0m            tree tpe: x1.type[0m
+[0m[[0m[31merror[0m] [0m[0m              symbol: case value x1[0m
+[0m[[0m[31merror[0m] [0m[0m   symbol definition: case val x1: (base.Node, Boolean) (a TermSymbol)[0m
+[0m[[0m[31merror[0m] [0m[0m      symbol package: base[0m
+[0m[[0m[31merror[0m] [0m[0m       symbol owners: value x1 -> method $anonfun$fit -> method addNode -> method fit -> class Learner[0m
+[0m[[0m[31merror[0m] [0m[0m           call site: method addLeaf in package base[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m== Source file context for tree position ==[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    43       // until max_height is reached or the data is fully partitioned into leaf nodes.[0m
+[0m[[0m[31merror[0m] [0m[0m    44       if (scope.length <= 1) addLeaf(scope, last_node)    //Single variable in the scope[0m
+[0m[[0m[31merror[0m] [0m[0m    45       else last_node.flatMap(node => (node,max_height <= 0) match {[0m
+[0m[[0m[31merror[0m] [0m[0m    46         case (Prod(_,_,_),false) => None                  //previous node is prod and we can still add some node => current is not prod[0m
+[0m[[0m[31merror[0m] [0m[0m    47         case _ => addProdNode(scope, max_height, last_node)[0m
+[0m[[0m[31merror[0m] [0m[0m    48       }).orElse(addSumNode(scope, max_height, last_node)) // We were not able to cut vertically, so we run clustering of the[0m
+[0m[[0m[31merror[0m] [0m[0m    49                                                           // data (each row is a point), and then we use the result of[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.SymbolTable.throwAssertionError(SymbolTable.scala:170)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Symbols$Symbol.suchThat(Symbols.scala:2024)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.matchingSymbolInPrefix$1(SpecializeTypes.scala:1573)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transformSelect$1(SpecializeTypes.scala:1596)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1691)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Apply.transform(Trees.scala:786)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$ValDef.$anonfun$transform$4(Trees.scala:433)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.atOwner(Trees.scala:2625)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:43)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:38)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:32)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$ValDef.transform(Trees.scala:432)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.$anonfun$transformStats$1(Trees.scala:2614)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.transformStats(Trees.scala:2612)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Block.transform(Trees.scala:556)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transformSelect$1(SpecializeTypes.scala:1580)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1691)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Apply.transform(Trees.scala:786)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transformSelect$1(SpecializeTypes.scala:1580)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1691)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Apply.transform(Trees.scala:786)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Block.transform(Trees.scala:556)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$DefDef.$anonfun$transform$5(Trees.scala:453)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.atOwner(Trees.scala:2625)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:43)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:38)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:32)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$DefDef.transform(Trees.scala:451)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1805)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.$anonfun$transformStats$1(Trees.scala:2614)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.transformStats(Trees.scala:2612)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$Block.transform(Trees.scala:556)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$DefDef.$anonfun$transform$5(Trees.scala:453)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.atOwner(Trees.scala:2625)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:43)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:38)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:32)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$DefDef.transform(Trees.scala:451)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1805)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.transformTrees(Trees.scala:2583)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.$anonfun$transform$25(SpecializeTypes.scala:1712)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.atOwner(Trees.scala:2625)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:43)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transformTemplate$1(SpecializeTypes.scala:1712)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1714)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.transformTemplate(Trees.scala:2587)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$ClassDef.$anonfun$transform$2(Trees.scala:361)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.atOwner(Trees.scala:2625)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:43)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:38)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:32)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.internal.Trees$ClassDef.transform(Trees.scala:360)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.$anonfun$transformStats$1(Trees.scala:2614)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.transformStats(Trees.scala:2612)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.$anonfun$transform$21(SpecializeTypes.scala:1697)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.reflect.api.Trees$Transformer.atOwner(Trees.scala:2625)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:43)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1695)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.ast.Trees$Transformer.transformUnit(Trees.scala:162)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.super$transformUnit(SpecializeTypes.scala:1489)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.$anonfun$transformUnit$1(SpecializeTypes.scala:1489)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transformUnit(SpecializeTypes.scala:1489)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.Transform$Phase.apply(Transform.scala:32)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:454)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.Global$GlobalPhase.run(Global.scala:401)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.transform.SpecializeTypes$SpecializationPhase.run(SpecializeTypes.scala:206)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.Global$Run.compileUnitsInternal(Global.scala:1515)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.Global$Run.compileUnits(Global.scala:1499)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.Global$Run.compileSources(Global.scala:1491)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.tools.nsc.Global$Run.compile(Global.scala:1626)[0m
+[0m[[0m[31merror[0m] [0m[0mxsbt.CachedCompiler0.run(CompilerInterface.scala:153)[0m
+[0m[[0m[31merror[0m] [0m[0mxsbt.CachedCompiler0.run(CompilerInterface.scala:125)[0m
+[0m[[0m[31merror[0m] [0m[0mxsbt.CompilerInterface.run(CompilerInterface.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0msun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0msun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)[0m
+[0m[[0m[31merror[0m] [0m[0msun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.reflect.Method.invoke(Method.java:498)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.AnalyzingCompiler.call(AnalyzingCompiler.scala:248)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.AnalyzingCompiler.compile(AnalyzingCompiler.scala:122)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.AnalyzingCompiler.compile(AnalyzingCompiler.scala:95)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.MixedAnalyzingCompiler.$anonfun$compile$4(MixedAnalyzingCompiler.scala:91)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.MixedAnalyzingCompiler.timed(MixedAnalyzingCompiler.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.MixedAnalyzingCompiler.$anonfun$compile$3(MixedAnalyzingCompiler.scala:82)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.MixedAnalyzingCompiler.$anonfun$compile$3$adapted(MixedAnalyzingCompiler.scala:77)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.JarUtils$.withPreviousJar(JarUtils.scala:215)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.MixedAnalyzingCompiler.compileScala$1(MixedAnalyzingCompiler.scala:77)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.MixedAnalyzingCompiler.compile(MixedAnalyzingCompiler.scala:146)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileInternal$1(IncrementalCompilerImpl.scala:343)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileInternal$1$adapted(IncrementalCompilerImpl.scala:343)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.Incremental$.doCompile(Incremental.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.Incremental$.$anonfun$compile$4(Incremental.scala:100)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCommon.recompileClasses(IncrementalCommon.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCommon.cycle(IncrementalCommon.scala:98)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.Incremental$.$anonfun$compile$3(Incremental.scala:102)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.Incremental$.manageClassfiles(Incremental.scala:155)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.Incremental$.compile(Incremental.scala:92)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCompile$.apply(Compile.scala:75)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCompilerImpl.compileInternal(IncrementalCompilerImpl.scala:348)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileIncrementally$1(IncrementalCompilerImpl.scala:301)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCompilerImpl.handleCompilationError(IncrementalCompilerImpl.scala:168)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCompilerImpl.compileIncrementally(IncrementalCompilerImpl.scala:248)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCompilerImpl.compile(IncrementalCompilerImpl.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.Defaults$.compileIncrementalTaskImpl(Defaults.scala:1765)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.Defaults$.$anonfun$compileIncrementalTask$1(Defaults.scala:1738)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.std.Transform$$anon$4.work(Transform.scala:67)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.Execute.$anonfun$submit$2(Execute.scala:281)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:19)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.Execute.work(Execute.scala:290)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.Execute.$anonfun$submit$1(Execute.scala:281)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:178)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.Thread.run(Thread.java:745)[0m
+[0m[[0m[31merror[0m] [0m[0m           [0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.AssertionError: assertion failed: [0m
+[0m[[0m[31merror[0m] [0m[0m  List(method apply$mcI$sp, method apply$mcI$sp)[0m
+[0m[[0m[31merror[0m] [0m[0m     while compiling: /Users/lucas/Desktop/SPN-breeze-scala/src/main/scala/base/Learner.scala[0m
+[0m[[0m[31merror[0m] [0m[0m        during phase: globalPhase=specialize, enteringPhase=explicitouter[0m
+[0m[[0m[31merror[0m] [0m[0m     library version: version 2.13.3[0m
+[0m[[0m[31merror[0m] [0m[0m    compiler version: version 2.13.3[0m
+[0m[[0m[31merror[0m] [0m[0m  reconstructed args: -bootclasspath /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar -classpath /Users/lucas/Desktop/SPN-breeze-scala/target/scala-2.13/classes:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalanlp/breeze_2.13/1.1/breeze_2.13-1.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.13/1.1/breeze-macros_2.13-1.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/fommil/netlib/core/1.1.2/core-1.1.2.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/wendykierp/JTransforms/3.1/JTransforms-3.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-math3/3.5/commons-math3-3.5.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.13/2.3.3/shapeless_2.13-2.3.3.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire_2.13/0.17.0-M1/spire_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.1.1/scala-collection-compat_2.13-2.1.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/pl/edu/icm/JLargeArrays/1.5/JLargeArrays-1.5.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire-macros_2.13/0.17.0-M1/spire-macros_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire-platform_2.13/0.17.0-M1/spire-platform_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire-util_2.13/0.17.0-M1/spire-util_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/machinist_2.13/0.6.8/machinist_2.13-0.6.8.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/algebra_2.13/2.0.0-M2/algebra_2.13-2.0.0-M2.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.13/2.0.0-M4/cats-kernel_2.13-2.0.0-M4.jar[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  last tree to typer: Ident(x1)[0m
+[0m[[0m[31merror[0m] [0m[0m       tree position: line 46 of /Users/lucas/Desktop/SPN-breeze-scala/src/main/scala/base/Learner.scala[0m
+[0m[[0m[31merror[0m] [0m[0m            tree tpe: x1.type[0m
+[0m[[0m[31merror[0m] [0m[0m              symbol: case value x1[0m
+[0m[[0m[31merror[0m] [0m[0m   symbol definition: case val x1: (base.Node, Boolean) (a TermSymbol)[0m
+[0m[[0m[31merror[0m] [0m[0m      symbol package: base[0m
+[0m[[0m[31merror[0m] [0m[0m       symbol owners: value x1 -> method $anonfun$fit -> method addNode -> method fit -> class Learner[0m
+[0m[[0m[31merror[0m] [0m[0m           call site: method addLeaf in package base[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m== Source file context for tree position ==[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    43       // until max_height is reached or the data is fully partitioned into leaf nodes.[0m
+[0m[[0m[31merror[0m] [0m[0m    44       if (scope.length <= 1) addLeaf(scope, last_node)    //Single variable in the scope[0m
+[0m[[0m[31merror[0m] [0m[0m    45       else last_node.flatMap(node => (node,max_height <= 0) match {[0m
+[0m[[0m[31merror[0m] [0m[0m    46         case (Prod(_,_,_),false) => None                  //previous node is prod and we can still add some node => current is not prod[0m
+[0m[[0m[31merror[0m] [0m[0m    47         case _ => addProdNode(scope, max_height, last_node)[0m
+[0m[[0m[31merror[0m] [0m[0m    48       }).orElse(addSumNode(scope, max_height, last_node)) // We were not able to cut vertically, so we run clustering of the[0m
+[0m[[0m[31merror[0m] [0m[0m    49                                                           // data (each row is a point), and then we use the result of[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.SymbolTable.throwAssertionError(SymbolTable.scala:170)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Symbols$Symbol.suchThat(Symbols.scala:2024)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.matchingSymbolInPrefix$1(SpecializeTypes.scala:1573)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transformSelect$1(SpecializeTypes.scala:1596)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1691)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Trees$Apply.transform(Trees.scala:786)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Trees$ValDef.$anonfun$transform$4(Trees.scala:433)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Trees$Transformer.atOwner(Trees.scala:2625)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:43)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:38)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:32)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Trees$ValDef.transform(Trees.scala:432)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Trees$Transformer.$anonfun$transformStats$1(Trees.scala:2614)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Trees$Transformer.transformStats(Trees.scala:2612)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Trees$Block.transform(Trees.scala:556)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transformSelect$1(SpecializeTypes.scala:1580)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1691)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Trees$Apply.transform(Trees.scala:786)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transformSelect$1(SpecializeTypes.scala:1580)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1691)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Trees$Apply.transform(Trees.scala:786)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Trees$Block.transform(Trees.scala:556)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Trees$DefDef.$anonfun$transform$5(Trees.scala:453)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Trees$Transformer.atOwner(Trees.scala:2625)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:43)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:38)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:32)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Trees$DefDef.transform(Trees.scala:451)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1805)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Trees$Transformer.$anonfun$transformStats$1(Trees.scala:2614)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Trees$Transformer.transformStats(Trees.scala:2612)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Trees$Block.transform(Trees.scala:556)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Trees$DefDef.$anonfun$transform$5(Trees.scala:453)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Trees$Transformer.atOwner(Trees.scala:2625)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:43)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:38)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:32)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Trees$DefDef.transform(Trees.scala:451)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1805)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Trees$Transformer.transformTrees(Trees.scala:2583)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.$anonfun$transform$25(SpecializeTypes.scala:1712)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Trees$Transformer.atOwner(Trees.scala:2625)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:43)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transformTemplate$1(SpecializeTypes.scala:1712)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1714)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Trees$Transformer.transformTemplate(Trees.scala:2587)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Trees$ClassDef.$anonfun$transform$2(Trees.scala:361)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Trees$Transformer.atOwner(Trees.scala:2625)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:43)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:38)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:32)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Trees$ClassDef.transform(Trees.scala:360)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.transform(TypingTransformers.scala:57)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1825)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1484)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Trees$Transformer.$anonfun$transformStats$1(Trees.scala:2614)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Trees$Transformer.transformStats(Trees.scala:2612)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.$anonfun$transform$21(SpecializeTypes.scala:1697)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Trees$Transformer.atOwner(Trees.scala:2625)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.TypingTransformers$TypingTransformer.atOwner(TypingTransformers.scala:43)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transform(SpecializeTypes.scala:1695)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.ast.Trees$Transformer.transformUnit(Trees.scala:162)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.super$transformUnit(SpecializeTypes.scala:1489)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.$anonfun$transformUnit$1(SpecializeTypes.scala:1489)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationTransformer.transformUnit(SpecializeTypes.scala:1489)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.Transform$Phase.apply(Transform.scala:32)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:454)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.Global$GlobalPhase.run(Global.scala:401)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.transform.SpecializeTypes$SpecializationPhase.run(SpecializeTypes.scala:206)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.Global$Run.compileUnitsInternal(Global.scala:1515)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.Global$Run.compileUnits(Global.scala:1499)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.Global$Run.compileSources(Global.scala:1491)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.tools.nsc.Global$Run.compile(Global.scala:1626)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.CachedCompiler0.run(CompilerInterface.scala:153)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.CachedCompiler0.run(CompilerInterface.scala:125)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbt.CompilerInterface.run(CompilerInterface.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.reflect.Method.invoke(Method.java:498)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.AnalyzingCompiler.call(AnalyzingCompiler.scala:248)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.AnalyzingCompiler.compile(AnalyzingCompiler.scala:122)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.AnalyzingCompiler.compile(AnalyzingCompiler.scala:95)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.MixedAnalyzingCompiler.$anonfun$compile$4(MixedAnalyzingCompiler.scala:91)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.MixedAnalyzingCompiler.timed(MixedAnalyzingCompiler.scala:186)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.MixedAnalyzingCompiler.$anonfun$compile$3(MixedAnalyzingCompiler.scala:82)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.MixedAnalyzingCompiler.$anonfun$compile$3$adapted(MixedAnalyzingCompiler.scala:77)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.JarUtils$.withPreviousJar(JarUtils.scala:215)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.MixedAnalyzingCompiler.compileScala$1(MixedAnalyzingCompiler.scala:77)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.MixedAnalyzingCompiler.compile(MixedAnalyzingCompiler.scala:146)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileInternal$1(IncrementalCompilerImpl.scala:343)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileInternal$1$adapted(IncrementalCompilerImpl.scala:343)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.Incremental$.doCompile(Incremental.scala:120)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.Incremental$.$anonfun$compile$4(Incremental.scala:100)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCommon.recompileClasses(IncrementalCommon.scala:180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCommon.cycle(IncrementalCommon.scala:98)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.Incremental$.$anonfun$compile$3(Incremental.scala:102)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.Incremental$.manageClassfiles(Incremental.scala:155)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.Incremental$.compile(Incremental.scala:92)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCompile$.apply(Compile.scala:75)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCompilerImpl.compileInternal(IncrementalCompilerImpl.scala:348)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileIncrementally$1(IncrementalCompilerImpl.scala:301)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCompilerImpl.handleCompilationError(IncrementalCompilerImpl.scala:168)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCompilerImpl.compileIncrementally(IncrementalCompilerImpl.scala:248)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCompilerImpl.compile(IncrementalCompilerImpl.scala:74)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.compileIncrementalTaskImpl(Defaults.scala:1765)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$compileIncrementalTask$1(Defaults.scala:1738)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:67)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:281)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:19)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:290)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:281)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:178)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Thread.java:745)[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) java.lang.AssertionError: assertion failed: [0m
+[0m[[0m[31merror[0m] [0m[0m  List(method apply$mcI$sp, method apply$mcI$sp)[0m
+[0m[[0m[31merror[0m] [0m[0m     while compiling: /Users/lucas/Desktop/SPN-breeze-scala/src/main/scala/base/Learner.scala[0m
+[0m[[0m[31merror[0m] [0m[0m        during phase: globalPhase=specialize, enteringPhase=explicitouter[0m
+[0m[[0m[31merror[0m] [0m[0m     library version: version 2.13.3[0m
+[0m[[0m[31merror[0m] [0m[0m    compiler version: version 2.13.3[0m
+[0m[[0m[31merror[0m] [0m[0m  reconstructed args: -bootclasspath /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar -classpath /Users/lucas/Desktop/SPN-breeze-scala/target/scala-2.13/classes:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalanlp/breeze_2.13/1.1/breeze_2.13-1.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.13/1.1/breeze-macros_2.13-1.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/fommil/netlib/core/1.1.2/core-1.1.2.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/wendykierp/JTransforms/3.1/JTransforms-3.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-math3/3.5/commons-math3-3.5.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.13/2.3.3/shapeless_2.13-2.3.3.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire_2.13/0.17.0-M1/spire_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.1.1/scala-collection-compat_2.13-2.1.1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/pl/edu/icm/JLargeArrays/1.5/JLargeArrays-1.5.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire-macros_2.13/0.17.0-M1/spire-macros_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire-platform_2.13/0.17.0-M1/spire-platform_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/spire-util_2.13/0.17.0-M1/spire-util_2.13-0.17.0-M1.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/machinist_2.13/0.6.8/machinist_2.13-0.6.8.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/algebra_2.13/2.0.0-M2/algebra_2.13-2.0.0-M2.jar:/Users/lucas/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.13/2.0.0-M4/cats-kernel_2.13-2.0.0-M4.jar[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  last tree to typer: Ident(x1)[0m
+[0m[[0m[31merror[0m] [0m[0m       tree position: line 46 of /Users/lucas/Desktop/SPN-breeze-scala/src/main/scala/base/Learner.scala[0m
+[0m[[0m[31merror[0m] [0m[0m            tree tpe: x1.type[0m
+[0m[[0m[31merror[0m] [0m[0m              symbol: case value x1[0m
+[0m[[0m[31merror[0m] [0m[0m   symbol definition: case val x1: (base.Node, Boolean) (a TermSymbol)[0m
+[0m[[0m[31merror[0m] [0m[0m      symbol package: base[0m
+[0m[[0m[31merror[0m] [0m[0m       symbol owners: value x1 -> method $anonfun$fit -> method addNode -> method fit -> class Learner[0m
+[0m[[0m[31merror[0m] [0m[0m           call site: method addLeaf in package base[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m== Source file context for tree position ==[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    43       // until max_height is reached or the data is fully partitioned into leaf nodes.[0m
+[0m[[0m[31merror[0m] [0m[0m    44       if (scope.length <= 1) addLeaf(scope, last_node)    //Single variable in the scope[0m
+[0m[[0m[31merror[0m] [0m[0m    45       else last_node.flatMap(node => (node,max_height <= 0) match {[0m
+[0m[[0m[31merror[0m] [0m[0m    46         case (Prod(_,_,_),false) => None                  //previous node is prod and we can still add some node => current is not prod[0m
+[0m[[0m[31merror[0m] [0m[0m    47         case _ => addProdNode(scope, max_height, last_node)[0m
+[0m[[0m[31merror[0m] [0m[0m    48       }).orElse(addSumNode(scope, max_height, last_node)) // We were not able to cut vertically, so we run clustering of the[0m
+[0m[[0m[31merror[0m] [0m[0m    49                                                           // data (each row is a point), and then we use the result of[0m
